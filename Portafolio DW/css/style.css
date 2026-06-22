@@ -1,0 +1,96 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+section {
+    position: relative;
+}
+
+#acerca, #servicios, #portafolio, #contacto {
+    scroll-margin-top: 80px; 
+}
+
+.hero {
+    background: #f8f9fa;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.portfolio-img {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    max-height: 550px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.portfolio-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.project-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #212529;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 1.6rem;
+    background-size: 45%;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.carousel-control-prev {
+    left: -15px;
+}
+
+.carousel-control-next {
+    right: -15px;
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #212529;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+#carouselPortafolio {
+    margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+    .carousel-control-prev {
+        left: -30px;
+    }
+    .carousel-control-next {
+        right: -30px;
+    }
+}
